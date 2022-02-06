@@ -6,6 +6,7 @@
   "license": "MIT",
   "module": "./lib/esm/useScrollObserver.js",
   "types": "./lib/esm/useScrollObserver.d.ts",
+  "homepage": "https://github.com/itschip/use-scroll-observer#readme",
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
