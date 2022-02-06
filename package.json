@@ -1,0 +1,24 @@
+{
+  "name": "use-scroll-observer",
+  "author": "itschip",
+  "version": "1.0.0",
+  "main": "./lib/cjs/useScrollObserver.js",
+  "license": "MIT",
+  "module": "./lib/esm/useScrollObserver.js",
+  "types": "./lib/esm/useScrollObserver.d.ts",
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "prepublishOnly": "yarn build"
+  },
+  "peerDependencies": {
+    "react": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.15",
+    "@types/react": "^17.0.39",
+    "react": "^17.0.2",
+    "typescript": "^4.5.5"
+  }
+}
